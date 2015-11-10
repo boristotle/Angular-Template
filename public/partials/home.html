@@ -1,1 +1,8 @@
 <h1>This is the home page template</h1>
+
+<p ng-repeat='data in zenData track by $index'>{{ data }}</p>
+
+<p>add your name <input type-'text' ng-model='name'></p>
+<p>add a message <input type='text' ng-model='message'></p>
+<p><input type='submit' ng-click='addPost()'></p>
+
